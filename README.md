@@ -13,5 +13,5 @@ A few quick high level details that may interest you about me ;
  
  I will be using this repository to document the projects that I work in a bid to improve my coding and data skills. 
  
- #### Next time you come here I will be Data Engineer: grey_exclamation: 🤞🏼
+ #### Next time you come here I will be Data Engineer :grey_exclamation: 🤞🏼
 
