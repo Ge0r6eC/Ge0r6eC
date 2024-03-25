@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  python:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ../..:/workspaces.rw
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: sleep infinity
+    tty: true
+    privileged: false
+    ports:
+      - 8080:8081
+    

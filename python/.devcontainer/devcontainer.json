@@ -1,0 +1,40 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/postgres
+{
+    "name": "dev.playgrounds.python",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "python",
+    "workspaceFolder": "/workspaces/python/python",
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    // "features": {},
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "njqdev.vscode-python-typehint",
+                "kevinrose.vsc-python-indent",
+                "aaron-bond.better-comments",
+                "njpwerner.autodocstring",
+                "almenon.arepl"
+            ],
+            "settings": {
+                "python.testing.unittestEnabled": false,
+                "python.testing.pytestEnabled": true,
+                "python.testing.cwd": "/workspaces/python/python",
+                "python.testing.pytestArgs": [
+                    "-s"
+                ],
+                "python.editor.defaultFormatter": "ms-python.black-formatter",
+                "python.editor.formatOnSave": true,
+                "python.analysis": {
+                    "typeCheckingMode": "basic",
+                    "inlayHints": {
+                        "callArgumentNames": true,
+                        "variableTypes": true,
+                        "functionReturnTypes": true,
+                        "pytestParameters": true
+                    }
+                }
+            }
+        }
+    }
+}
